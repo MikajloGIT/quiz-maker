@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #fff, rgb(179, 197, 212));
+}
+
+.edit-quiz-btn {
+  height: 40px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background-color: rgb(86, 42, 97);
+  color: #fff;
+  box-shadow: -2px 2px 3px rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.edit-quiz-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  overflow: hidden;
+}
+
+.question-container.hidden {
+  display: none;
+}
+
+.question {
+  width: 350px;
+  align-self: center;
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 550;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  text-transform: capitalize;
+  margin: 10px 40px 60px;
+}
+
+.answer {
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.answer label {
+  padding: 12px 5px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.answer:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.submit {
+  background-color: rgb(86, 42, 97);
+  height: 50px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+
+.submit.active {
+  background-color: rgb(132, 66, 148);
+  cursor: pointer;
+}
+
+.submit.active:hover {
+  background-color: rgb(116, 58, 131);
+}
