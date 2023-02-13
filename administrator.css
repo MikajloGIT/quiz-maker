@@ -164,11 +164,9 @@ h2 {
   text-decoration: none;
 }
 
-.take-quiz-btn {
+.btn1{
   height: 40px;
   position: fixed;
-  top: 70px;
-  right: 16px;
   color: #fff;
   background-color: rgb(86, 42, 97);
   box-shadow: -2px 2px 3px rgba(255, 255, 255, 0.3);
@@ -180,20 +178,19 @@ h2 {
   z-index: 100;
 }
 
-.add-question-btn {
-  height: 40px;
-  position: fixed;
+.new-quiz-btn{
   top: 16px;
   right: 16px;
-  background-color: rgb(86, 42, 97);
-  color: #fff;
-  box-shadow: -2px 2px 3px rgba(255, 255, 255, 0.3);
-  font-size: 16px;
-  border: none;
-  border-radius: 3px;
-  padding: 8px 16px;
-  cursor: pointer;
-  z-index: 100;
+}
+
+.take-quiz-btn {
+  top: 16px;
+  left: 16px;
+}
+
+.add-question-btn {
+  top: 70px;
+  right: 16px;
 }
 
 .add-answer-btn {
